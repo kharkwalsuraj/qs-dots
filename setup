@@ -1,0 +1,71 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+
+REPO_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+export REPO_ROOT
+export DOTS_DIR="$REPO_ROOT/dots"
+export PACKAGES_DIR="$REPO_ROOT/install/packages"
+export LOG_FILE="${XDG_STATE_HOME:-$HOME/.local/state}/hypr-quickshell-dots-install.log"
+
+source "$REPO_ROOT/sdata/lib/logging.sh"
+source "$REPO_ROOT/sdata/lib/packages.sh"
+source "$REPO_ROOT/sdata/lib/backup.sh"
+source "$REPO_ROOT/sdata/lib/symlink.sh"
+source "$REPO_ROOT/sdata/lib/deploy.sh"
+source "$REPO_ROOT/sdata/lib/postsetup.sh"
+
+trap 'log_error "Install aborted (line $LINENO). See $LOG_FILE"' ERR
+
+print_banner() {
+    cat << 'BANNER'
+
+  ┌─────────────────────────────────────────────┐
+  │   Hyprland + Quickshell  ·  dotfiles setup   │
+  └─────────────────────────────────────────────┘
+
+BANNER
+}
+
+print_menu() {
+    cat << 'MENU'
+  1) Normal Install       (install packages, copy configs into ~/.config)
+  2) Development Install  (symlink dots/ into ~/.config for live editing)
+  3) Exit
+
+MENU
+}
+
+run_normal_install() {
+    log_info "Starting NORMAL install"
+    install_packages            # sdata/lib/packages.sh
+    backup_existing_configs     # sdata/lib/backup.sh
+    deploy_dots_copy            # sdata/lib/deploy.sh (cp, not symlink)
+    run_post_install            # sdata/lib/postinstall.sh
+    log_info "Normal install complete. Log the shell out / restart Hyprland."
+}
+
+run_dev_install() {
+    log_info "Starting DEVELOPMENT install"
+    install_packages
+    backup_existing_configs
+    deploy_dots_symlink         # sdata/lib/symlink.sh
+    run_post_install
+    log_info "Development install complete. Edits under dots/ take effect immediately."
+}
+
+main() {
+    mkdir -p "$(dirname "$LOG_FILE")"
+    print_banner
+    print_menu
+    read -rp "  Select an option [1-3]: " choice
+    echo
+    case "$choice" in
+        1) run_normal_install ;;
+        2) run_dev_install ;;
+        3) echo "Bye."; exit 0 ;;
+        *) echo "Invalid option."; exit 1 ;;
+    esac
+}
+
+main "$@"

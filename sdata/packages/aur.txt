@@ -1,0 +1,2 @@
+kde-thumbnailer-apk
+raw-thumbnailer

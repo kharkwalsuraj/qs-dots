@@ -1,0 +1,4 @@
+# Fonts, installed alongside pacman.txt
+ttf-jetbrains-mono-nerd
+noto-fonts
+noto-fonts-emoji
