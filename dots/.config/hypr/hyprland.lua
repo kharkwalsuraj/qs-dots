@@ -1,3 +1,4 @@
+require("config.env")
 require("config.execs")
 require("config.general")
 require("config.rules")

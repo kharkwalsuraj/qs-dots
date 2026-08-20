@@ -1,4 +1,3 @@
-
 #!/usr/bin/env bash
 # Post-install steps common to both Normal and Development installs:
 # enabling services, seeding default user settings, permission fixes.

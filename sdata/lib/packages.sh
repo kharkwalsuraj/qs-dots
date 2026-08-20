@@ -2,9 +2,9 @@
 # Package installation. Reads plain-text package lists so the set of
 # packages can be edited without touching any shell logic.
 #
-#   install/packages/pacman.txt   - official repo packages (pacman -S)
-#   install/packages/aur.txt      - AUR packages (needs an AUR helper)
-#   install/packages/fonts.txt    - font packages, installed alongside pacman list
+#   sdata/packages/pacman.txt   - official repo packages (pacman -S)
+#   strips/packages/aur.txt      - AUR packages (needs an AUR helper)
+#   sdata/packages/fonts.txt    - font packages, installed alongside pacman list
 
 _read_list() {
     # strips blank lines and comments from a package list file

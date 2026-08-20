@@ -5,7 +5,7 @@ set -euo pipefail
 REPO_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 export REPO_ROOT
 export DOTS_DIR="$REPO_ROOT/dots"
-export PACKAGES_DIR="$REPO_ROOT/install/packages"
+export PACKAGES_DIR="$REPO_ROOT/sdata/packages"
 export LOG_FILE="${XDG_STATE_HOME:-$HOME/.local/state}/hypr-quickshell-dots-install.log"
 
 source "$REPO_ROOT/sdata/lib/logging.sh"

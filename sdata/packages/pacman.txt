@@ -16,7 +16,7 @@ bluez
 bluez-utils
 
 xdg-desktop-portal-hyprland
-xdg-desktop-portal-gtk
+xdg-desktop-portal-kde
 xdg-desktop-portal
 
 polkit-kde-agent
@@ -54,3 +54,4 @@ vlc
 vlc-plugins-all
 
 neovim
+matugen
