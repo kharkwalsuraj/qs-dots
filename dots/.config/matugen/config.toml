@@ -1,0 +1,23 @@
+[config]
+
+[config.wallpaper]
+set = true
+command = "awww img --transition-type center {{ image }}"
+
+[templates.gtk3]
+input_path = '~/.config/matugen/templates/gtk/gtk.css'
+output_path = '~/.config/gtk-3.0/colors.css'
+post_hook = 'gsettings set org.gnome.desktop.interface gtk-theme ""; gsettings set org.gnome.desktop.interface gtk-theme adw-gtk3-{{mode}}'
+
+[templates.gtk4]
+input_path = '~/.config/matugen/templates/gtk/gtk.css'
+output_path = '~/.config/gtk-4.0/colors.css'
+post_hook = '~/.config/matugen/templates/gtk/reload.sh'
+# ...
+
+# TODO : kdeglobals
+
+[templates.terminal]
+input_path = '~/.config/matugen/templates/kitty/colors.conf'
+output_path = '~/.config/kitty/colors.conf'
+post_hook = 'pkill -USR1 kitty'

@@ -21,6 +21,7 @@ xdg-desktop-portal
 
 polkit-kde-agent
 openssh
+gnome-keyring
 
 starship
 fish
