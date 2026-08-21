@@ -14,6 +14,8 @@ network-manager-applet
 
 bluez
 bluez-utils
+plasma-nm
+bluedevil
 
 xdg-desktop-portal-hyprland
 xdg-desktop-portal-kde

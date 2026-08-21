@@ -7,6 +7,7 @@ export REPO_ROOT
 export DOTS_DIR="$REPO_ROOT/dots"
 export PACKAGES_DIR="$REPO_ROOT/sdata/packages"
 export LOG_FILE="${XDG_STATE_HOME:-$HOME/.local/state}/hypr-quickshell-dots-install.log"
+# export XDG_CONFIG_HOME="${XDG_CONFIG_HOME:-$HOME/.config}"
 
 source "$REPO_ROOT/sdata/lib/logging.sh"
 source "$REPO_ROOT/sdata/lib/packages.sh"

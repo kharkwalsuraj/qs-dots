@@ -13,8 +13,14 @@ _enable_services() {
     fi
 }
 
+_darkly_gtk () {
+  git clone https://github.com/wrymt/darkly-gtk.git /tmp/
+  /tmp/darkly-gtk/install.sh -l
+}
+
 run_post_install() {
     log_info "Running post-install steps..."
+    _darkly_gtk
     # _enable_services
     # chmod +x "$REPO_ROOT"/scripts/*.sh 2>/dev/null || true
     log_ok "Post-install complete"
