@@ -17,8 +17,15 @@ post_hook= '~/.config/matugen/templates/gtk/setup.sh'
 [templates.kdeglobals]
 input_path= '~/.config/matugen/templates/kde/kdeglobals'
 output_path = '~/.config/kdeglobals'
+post_hook= 'killall xdg-desktop-portal-kde 2>/dev/null; systemctl --user restart plasma-xdg-desktop-portal-kde.service' 
+# TODO : file picker dosent change the theme so i have to restart, I need a better solution
 
 [templates.terminal]
 input_path = '~/.config/matugen/templates/kitty/colors.conf'
 output_path = '~/.config/kitty/colors.conf'
 post_hook = 'pkill -USR1 kitty'
+
+[templates.hypr]
+input_path = '~/.config/matugen/templates/hypr/colors.lua'
+output_path = '~/.config/hypr/config/colors.lua'
+post_hook = 'hyprctl reload'

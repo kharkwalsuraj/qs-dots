@@ -1,4 +1,6 @@
 kde-thumbnailer-apk
 raw-thumbnailer
+
 bibata-cursor-theme-bin 
+
 darkly-bin

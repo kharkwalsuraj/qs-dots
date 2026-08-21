@@ -30,3 +30,7 @@ if status is-interactive
   alias yy "yazi"
   alias lg "lazygit"
 end
+
+
+# Added by Antigravity CLI installer
+set -gx PATH "/home/kharkwalsuraj/.local/bin" $PATH

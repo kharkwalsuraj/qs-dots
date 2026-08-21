@@ -3,14 +3,17 @@
 # enabling services, seeding default user settings, permission fixes.
 
 _enable_services() {
-    # Idempotent: `enable` is a no-op if already enabled.
-    if command -v systemctl >/dev/null 2>&1; then
-        for svc in pipewire pipewire-pulse wireplumber; do
-            systemctl --user enable "$svc" >> "$LOG_FILE" 2>&1 || \
-                log_warn "Could not enable $svc (continuing)"
-        done
-        log_ok "Audio services enabled (user systemd)"
-    fi
+    echo "→ Enabling essential system services..."
+    # Network
+    sudo systemctl enable --now NetworkManager
+    # Bluetooth
+    sudo systemctl enable --now bluetooth
+    # Audio (PipeWire)
+    systemctl --user enable --now pipewire.service
+    systemctl --user enable --now pipewire-pulse.service
+    systemctl --user enable --now wireplumber.service
+
+    echo "✓ Essential services enabled"
 }
 
 _darkly_gtk () {
