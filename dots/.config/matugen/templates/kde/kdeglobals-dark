@@ -1,0 +1,183 @@
+[ColorEffects:Disabled]
+ChangeSelectionColor=
+Color={{ colors.surface_container.dark.hex }}
+ColorAmount=0.5
+ColorEffect=3
+ContrastAmount=0
+ContrastEffect=0
+Enable=
+IntensityAmount=0
+IntensityEffect=0
+
+[ColorEffects:Inactive]
+ChangeSelectionColor=true
+Color={{ colors.surface_container_lowest.dark.hex }}
+ColorAmount=0.025
+ColorEffect=0
+ContrastAmount=0.1
+ContrastEffect=0
+Enable=true
+IntensityAmount=0
+IntensityEffect=0
+
+[Colors:Button]
+BackgroundAlternate={{ colors.surface_variant.dark.hex }}
+BackgroundNormal={{ colors.surface_container_high.dark.hex }}
+DecorationFocus={{ colors.primary.dark.hex }}
+DecorationHover={{ colors.primary.dark.hex }}
+ForegroundActive={{ colors.on_surface.dark.hex }}
+ForegroundInactive={{ colors.outline.dark.hex }}
+ForegroundLink={{ colors.secondary.dark.hex }}
+ForegroundNegative={{ colors.error.dark.hex }}
+ForegroundNeutral={{ colors.warning.dark.hex }}
+ForegroundNormal={{ colors.on_surface.dark.hex }}
+ForegroundPositive={{ colors.success.dark.hex }}
+ForegroundVisited={{ colors.tertiary.dark.hex }}
+
+[Colors:Complementary]
+BackgroundAlternate={{ colors.surface.dark.hex }}
+BackgroundNormal={{ colors.surface_container.dark.hex }}
+DecorationFocus={{ colors.primary.dark.hex }}
+DecorationHover={{ colors.primary.dark.hex }}
+ForegroundActive={{ colors.inverse_surface.dark.hex }}
+ForegroundInactive={{ colors.outline.dark.hex }}
+ForegroundLink={{ colors.secondary.dark.hex }}
+ForegroundNegative={{ colors.error.dark.hex }}
+ForegroundNeutral={{ colors.warning.dark.hex }}
+ForegroundNormal={{ colors.on_surface_variant.dark.hex }}
+ForegroundPositive={{ colors.success.dark.hex }}
+ForegroundVisited={{ colors.tertiary.dark.hex }}
+
+[Colors:Header]
+BackgroundAlternate={{ colors.surface_container.dark.hex }}
+BackgroundNormal={{ colors.surface_container.dark.hex }}
+DecorationFocus={{ colors.primary.dark.hex }}
+DecorationHover={{ colors.primary.dark.hex }}
+ForegroundActive={{ colors.inverse_surface.dark.hex }}
+ForegroundInactive={{ colors.outline.dark.hex }}
+ForegroundLink={{ colors.secondary.dark.hex }}
+ForegroundNegative={{ colors.error.dark.hex }}
+ForegroundNeutral={{ colors.warning.dark.hex }}
+ForegroundNormal={{ colors.on_surface_variant.dark.hex }}
+ForegroundPositive={{ colors.success.dark.hex }}
+ForegroundVisited={{ colors.tertiary.dark.hex }}
+
+[Colors:Header][Inactive]
+BackgroundAlternate={{ colors.surface_container.dark.hex }}
+BackgroundNormal={{ colors.surface_container.dark.hex }}
+DecorationFocus={{ colors.primary.dark.hex }}
+DecorationHover={{ colors.primary.dark.hex }}
+ForegroundActive={{ colors.inverse_surface.dark.hex }}
+ForegroundInactive={{ colors.outline.dark.hex }}
+ForegroundLink={{ colors.secondary.dark.hex }}
+ForegroundNegative={{ colors.error.dark.hex }}
+ForegroundNeutral={{ colors.warning.dark.hex }}
+ForegroundNormal={{ colors.on_surface_variant.dark.hex }}
+ForegroundPositive={{ colors.success.dark.hex }}
+ForegroundVisited={{ colors.tertiary.dark.hex }}
+
+[Colors:Selection]
+BackgroundAlternate={{ colors.primary.dark.hex }}
+BackgroundNormal={{ colors.primary.dark.hex }}
+DecorationFocus={{ colors.primary.dark.hex }}
+DecorationHover={{ colors.secondary.dark.hex }}
+ForegroundActive={{ colors.on_primary.dark.hex }}
+ForegroundInactive={{ colors.on_primary.dark.hex }}
+ForegroundLink={{ colors.secondary_container.dark.hex }}
+ForegroundNegative={{ colors.error_container.dark.hex }}
+ForegroundNeutral={{ colors.warning_container.dark.hex }}
+ForegroundNormal={{ colors.on_primary.dark.hex }}
+ForegroundPositive={{ colors.success_container.dark.hex }}
+ForegroundVisited={{ colors.tertiary_container.dark.hex }}
+
+[Colors:Tooltip]
+BackgroundAlternate={{ colors.surface_variant.dark.hex }}
+BackgroundNormal={{ colors.surface_container.dark.hex }}
+DecorationFocus={{ colors.primary.dark.hex }}
+DecorationHover={{ colors.primary.dark.hex }}
+ForegroundActive={{ colors.on_surface.dark.hex }}
+ForegroundInactive={{ colors.outline.dark.hex }}
+ForegroundLink={{ colors.secondary.dark.hex }}
+ForegroundNegative={{ colors.error.dark.hex }}
+ForegroundNeutral={{ colors.warning.dark.hex }}
+ForegroundNormal={{ colors.on_surface.dark.hex }}
+ForegroundPositive={{ colors.success.dark.hex }}
+ForegroundVisited={{ colors.tertiary.dark.hex }}
+
+[Colors:View]
+BackgroundAlternate={{ colors.surface_container.dark.hex }}
+BackgroundNormal={{ colors.surface_dim.dark.hex }}
+DecorationFocus={{ colors.primary.dark.hex }}
+DecorationHover={{ colors.inverse_primary.dark.hex }}
+ForegroundActive={{ colors.inverse_surface.dark.hex }}
+ForegroundInactive={{ colors.outline.dark.hex }}
+ForegroundLink={{ colors.secondary.dark.hex }}
+ForegroundNegative={{ colors.error.dark.hex }}
+ForegroundNeutral={{ colors.warning.dark.hex }}
+ForegroundNormal={{ colors.on_surface.dark.hex }}
+ForegroundPositive={{ colors.success.dark.hex }}
+ForegroundVisited={{ colors.tertiary.dark.hex }}
+
+[Colors:Window]
+BackgroundAlternate={{ colors.surface_variant.dark.hex }}
+BackgroundNormal={{ colors.surface_container.dark.hex }}
+DecorationFocus={{ colors.primary.dark.hex }}
+DecorationHover={{ colors.primary.dark.hex }}
+ForegroundActive={{ colors.secondary.dark.hex }}
+ForegroundInactive={{ colors.outline.dark.hex }}
+ForegroundLink={{ colors.secondary.dark.hex }}
+ForegroundNegative={{ colors.error.dark.hex }}
+ForegroundNeutral={{ colors.warning.dark.hex }}
+ForegroundNormal={{ colors.on_surface_variant.dark.hex }}
+ForegroundPositive={{ colors.success.dark.hex }}
+ForegroundVisited={{ colors.tertiary.dark.hex }}
+
+[General]
+ColorScheme=MaterialDark
+LastUsedCustomAccentColor=184,117,220
+XftHintStyle=hintslight
+TerminalApplication=kitty -1
+XftSubPixel=none
+fixed=JetBrainsMono Nerd Font,11,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
+font=Google Sans Flex,11,-1,5,500,0,0,0,0,0,0,0,0,0,0,1,Medium
+menuFont=Google Sans Flex,10,-1,5,500,0,0,0,0,0,0,0,0,0,0,1,Medium
+smallestReadableFont=Google Sans Flex,9,-1,5,500,0,0,0,0,0,0,0,0,0,0,1,Medium
+toolBarFont=Google Sans Flex,10,-1,5,500,0,0,0,0,0,0,0,0,0,0,1,Medium
+
+[Icons]
+Theme=breeze-dark
+
+[KDE]
+widgetStyle=Darkly
+
+[KFileDialog Settings]
+Allow Expansion=false
+Automatically select filename extension=true
+Breadcrumb Navigation=true
+Decoration position=2
+LocationCombo Completionmode=5
+PathCombo Completionmode=5
+Show Bookmarks=false
+Show Full Path=false
+Show Inline Previews=true
+Show Preview=false
+Show Speedbar=true
+Show hidden files=false
+Sort by=Name
+Sort directories first=true
+Sort hidden files last=false
+Sort reversed=false
+Speedbar Width=168
+View Style=Simple
+
+[Sounds]
+Theme=freedesktop
+
+[WM]
+activeBackground={{ colors.surface_container_highest.dark.hex }}
+activeBlend=252,252,252
+activeForeground={{ colors.on_surface.dark.hex }}
+activeFont=Google Sans Flex,10,-1,5,500,0,0,0,0,0,0,0,0,0,0,1,Medium
+inactiveBackground={{ colors.secondary_container.dark.hex }}
+inactiveBlend=161,169,177
+inactiveForeground={{ colors.on_secondary_container.dark.hex }}

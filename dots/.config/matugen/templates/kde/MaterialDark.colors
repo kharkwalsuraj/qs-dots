@@ -1,0 +1,150 @@
+[ColorEffects:Disabled]
+ChangeSelectionColor=
+Color={{ colors.surface_container.dark.hex }}
+ColorAmount=0.5
+ColorEffect=3
+ContrastAmount=0
+ContrastEffect=0
+Enable=
+IntensityAmount=0
+IntensityEffect=0
+
+[ColorEffects:Inactive]
+ChangeSelectionColor=true
+Color={{ colors.surface_container_lowest.dark.hex }}
+ColorAmount=0.025
+ColorEffect=0
+ContrastAmount=0.1
+ContrastEffect=0
+Enable=true
+IntensityAmount=0
+IntensityEffect=0
+
+[Colors:Button]
+BackgroundAlternate={{ colors.surface_variant.dark.hex }}
+BackgroundNormal={{ colors.surface_container_high.dark.hex }}
+DecorationFocus={{ colors.primary.dark.hex }}
+DecorationHover={{ colors.primary.dark.hex }}
+ForegroundActive={{ colors.on_surface.dark.hex }}
+ForegroundInactive={{ colors.outline.dark.hex }}
+ForegroundLink={{ colors.secondary.dark.hex }}
+ForegroundNegative={{ colors.error.dark.hex }}
+ForegroundNeutral={{ colors.warning.dark.hex }}
+ForegroundNormal={{ colors.on_surface.dark.hex }}
+ForegroundPositive={{ colors.success.dark.hex }}
+ForegroundVisited={{ colors.tertiary.dark.hex }}
+
+[Colors:Complementary]
+BackgroundAlternate={{ colors.surface.dark.hex }}
+BackgroundNormal={{ colors.surface_container.dark.hex }}
+DecorationFocus={{ colors.primary.dark.hex }}
+DecorationHover={{ colors.primary.dark.hex }}
+ForegroundActive={{ colors.inverse_surface.dark.hex }}
+ForegroundInactive={{ colors.outline.dark.hex }}
+ForegroundLink={{ colors.secondary.dark.hex }}
+ForegroundNegative={{ colors.error.dark.hex }}
+ForegroundNeutral={{ colors.warning.dark.hex }}
+ForegroundNormal={{ colors.on_surface_variant.dark.hex }}
+ForegroundPositive={{ colors.success.dark.hex }}
+ForegroundVisited={{ colors.tertiary.dark.hex }}
+
+[Colors:Header]
+BackgroundAlternate={{ colors.surface_container.dark.hex }}
+BackgroundNormal={{ colors.surface_container.dark.hex }}
+DecorationFocus={{ colors.primary.dark.hex }}
+DecorationHover={{ colors.primary.dark.hex }}
+ForegroundActive={{ colors.inverse_surface.dark.hex }}
+ForegroundInactive={{ colors.outline.dark.hex }}
+ForegroundLink={{ colors.secondary.dark.hex }}
+ForegroundNegative={{ colors.error.dark.hex }}
+ForegroundNeutral={{ colors.warning.dark.hex }}
+ForegroundNormal={{ colors.on_surface_variant.dark.hex }}
+ForegroundPositive={{ colors.success.dark.hex }}
+ForegroundVisited={{ colors.tertiary.dark.hex }}
+
+[Colors:Header][Inactive]
+BackgroundAlternate={{ colors.surface_container.dark.hex }}
+BackgroundNormal={{ colors.surface_container.dark.hex }}
+DecorationFocus={{ colors.primary.dark.hex }}
+DecorationHover={{ colors.primary.dark.hex }}
+ForegroundActive={{ colors.inverse_surface.dark.hex }}
+ForegroundInactive={{ colors.outline.dark.hex }}
+ForegroundLink={{ colors.secondary.dark.hex }}
+ForegroundNegative={{ colors.error.dark.hex }}
+ForegroundNeutral={{ colors.warning.dark.hex }}
+ForegroundNormal={{ colors.on_surface_variant.dark.hex }}
+ForegroundPositive={{ colors.success.dark.hex }}
+ForegroundVisited={{ colors.tertiary.dark.hex }}
+
+[Colors:Selection]
+BackgroundAlternate={{ colors.primary.dark.hex }}
+BackgroundNormal={{ colors.primary.dark.hex }}
+DecorationFocus={{ colors.primary.dark.hex }}
+DecorationHover={{ colors.secondary.dark.hex }}
+ForegroundActive={{ colors.on_primary.dark.hex }}
+ForegroundInactive={{ colors.on_primary.dark.hex }}
+ForegroundLink={{ colors.secondary_container.dark.hex }}
+ForegroundNegative={{ colors.error_container.dark.hex }}
+ForegroundNeutral={{ colors.warning_container.dark.hex }}
+ForegroundNormal={{ colors.on_primary.dark.hex }}
+ForegroundPositive={{ colors.success_container.dark.hex }}
+ForegroundVisited={{ colors.tertiary_container.dark.hex }}
+
+[Colors:Tooltip]
+BackgroundAlternate={{ colors.surface_variant.dark.hex }}
+BackgroundNormal={{ colors.surface_container.dark.hex }}
+DecorationFocus={{ colors.primary.dark.hex }}
+DecorationHover={{ colors.primary.dark.hex }}
+ForegroundActive={{ colors.on_surface.dark.hex }}
+ForegroundInactive={{ colors.outline.dark.hex }}
+ForegroundLink={{ colors.secondary.dark.hex }}
+ForegroundNegative={{ colors.error.dark.hex }}
+ForegroundNeutral={{ colors.warning.dark.hex }}
+ForegroundNormal={{ colors.on_surface.dark.hex }}
+ForegroundPositive={{ colors.success.dark.hex }}
+ForegroundVisited={{ colors.tertiary.dark.hex }}
+
+[Colors:View]
+BackgroundAlternate={{ colors.surface_container.dark.hex }}
+BackgroundNormal={{ colors.surface_dim.dark.hex }}
+DecorationFocus={{ colors.primary.dark.hex }}
+DecorationHover={{ colors.inverse_primary.dark.hex }}
+ForegroundActive={{ colors.inverse_surface.dark.hex }}
+ForegroundInactive={{ colors.outline.dark.hex }}
+ForegroundLink={{ colors.secondary.dark.hex }}
+ForegroundNegative={{ colors.error.dark.hex }}
+ForegroundNeutral={{ colors.warning.dark.hex }}
+ForegroundNormal={{ colors.on_surface.dark.hex }}
+ForegroundPositive={{ colors.success.dark.hex }}
+ForegroundVisited={{ colors.tertiary.dark.hex }}
+
+[Colors:Window]
+BackgroundAlternate={{ colors.surface_variant.dark.hex }}
+BackgroundNormal={{ colors.surface_container.dark.hex }}
+DecorationFocus={{ colors.primary.dark.hex }}
+DecorationHover={{ colors.primary.dark.hex }}
+ForegroundActive={{ colors.secondary.dark.hex }}
+ForegroundInactive={{ colors.outline.dark.hex }}
+ForegroundLink={{ colors.secondary.dark.hex }}
+ForegroundNegative={{ colors.error.dark.hex }}
+ForegroundNeutral={{ colors.warning.dark.hex }}
+ForegroundNormal={{ colors.on_surface_variant.dark.hex }}
+ForegroundPositive={{ colors.success.dark.hex }}
+ForegroundVisited={{ colors.tertiary.dark.hex }}
+
+[General]
+ColorScheme=MaterialDark
+Name=Material Dark
+shadeSortColumn=true
+
+[KDE]
+contrast=4
+frameContrast=0.2
+
+[WM]
+activeBackground={{ colors.surface_container_highest.dark.hex }}
+activeBlend=252,252,252
+activeForeground={{ colors.on_surface.dark.hex }}
+inactiveBackground={{ colors.secondary_container.dark.hex }}
+inactiveBlend=161,169,177
+inactiveForeground={{ colors.on_secondary_container.dark.hex }}

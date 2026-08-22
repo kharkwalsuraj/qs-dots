@@ -14,11 +14,22 @@ input_path= '~/.config/matugen/templates/gtk/colors4.css'
 output_path= '~/.config/gtk-4.0/colors.css'
 post_hook= '~/.config/matugen/templates/gtk/setup.sh'
 
-[templates.kdeglobals]
-input_path= '~/.config/matugen/templates/kde/kdeglobals'
-output_path = '~/.config/kdeglobals'
-post_hook= 'killall xdg-desktop-portal-kde 2>/dev/null; systemctl --user restart plasma-xdg-desktop-portal-kde.service' 
-# TODO : file picker dosent change the theme so i have to restart, I need a better solution
+[templates.kde_colors_dark]
+input_path= '~/.config/matugen/templates/kde/MaterialDark.colors'
+output_path = '~/.local/share/color-schemes/MaterialDark.colors'
+
+[templates.kde_colors_light]
+input_path= '~/.config/matugen/templates/kde/MaterialLight.colors'
+output_path = '~/.local/share/color-schemes/MaterialLight.colors'
+
+[templates.kdeglobals_dark]
+input_path= '~/.config/matugen/templates/kde/kdeglobals-dark'
+output_path = '~/.config/matugen/templates/kde/output/kdeglobals-dark'
+
+[templates.kdeglobals_light]
+input_path= '~/.config/matugen/templates/kde/kdeglobals-light'
+output_path = '~/.config/matugen/templates/kde/output/kdeglobals-light'
+post_hook= '~/.config/matugen/templates/kde/setup.sh &' 
 
 [templates.terminal]
 input_path = '~/.config/matugen/templates/kitty/colors.conf'

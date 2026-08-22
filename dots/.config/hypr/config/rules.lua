@@ -41,7 +41,8 @@ hl.window_rule({ match = { class = ".*bluedevilwizard" }, float = true })
 hl.window_rule({ match = { title = ".*Shell conflicts.*" }, float = true })
 hl.window_rule({ match = { class = "org.freedesktop.impl.portal.desktop.kde" }, float = true })
 hl.window_rule({ match = { class = "org.freedesktop.impl.portal.desktop.kde" }, size = { "(monitor_w*0.60)", "(monitor_h*0.65)" } })
-
+-- gnome keyring
+hl.window_rule({ match = { class = "gcr-prompter" }, size = { "(monitor_w*0.40)", "(monitor_h*0.25)" } })
 -- Tiling
 hl.window_rule({ match = { class = "^dev\\.warp\\.Warp$" }, tile = true })
 

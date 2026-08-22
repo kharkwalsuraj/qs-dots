@@ -10,12 +10,14 @@ set_mode() {
             echo "Setting theme to light mode..."
             gsettings set org.gnome.desktop.interface gtk-theme "Darkly"
             gsettings set org.gnome.desktop.interface color-scheme "prefer-light"
+            plasma-apply-colorscheme MaterialLight
             ;;
 
         dark)
             echo "Setting theme to dark mode..."
             gsettings set org.gnome.desktop.interface gtk-theme "Darkly"
             gsettings set org.gnome.desktop.interface color-scheme "prefer-dark"
+            plasma-apply-colorscheme MaterialDark
             ;;
 
         *)
@@ -26,6 +28,7 @@ set_mode() {
     esac
 }
 
+
 generate_colors() {
     if [[ -z "$IMAGE" ]]; then
         echo "Error: no wallpaper specified."
@@ -34,9 +37,14 @@ generate_colors() {
 
     echo "Setting wallpaper and generating material colors..."
 
-    matugen image "$IMAGE" \
-        -m "$MODE" \
-        -t "$SCHEME"
+    if [[ -z "$MODE" ]]; then
+        MODE=$(gsettings get org.gnome.desktop.interface color-scheme)
+        [[ "$MODE" == "'prefer-dark'" ]] && MODE="dark" || MODE="light"
+    fi
+
+    echo "current mode = $MODE"
+
+    matugen image "$IMAGE" -m "$MODE" -t "$SCHEME"
 }
 
 main() {
@@ -75,8 +83,8 @@ main() {
         esac
     done
 
-    [[ -n "$IMAGE" ]] && generate_colors
     [[ -n "$MODE" ]] && set_mode
+    [[ -n "$IMAGE" ]] && generate_colors
 }
 
 main "$@"

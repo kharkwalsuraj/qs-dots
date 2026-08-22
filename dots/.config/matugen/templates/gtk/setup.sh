@@ -9,8 +9,6 @@ grep -qxF '@import "colors.css";' "$file" 2>/dev/null || echo '@import "colors.c
 file="$HOME/.config/gtk-3.0/gtk-dark.css"
 grep -qxF '@import "colors.css";' "$file" 2>/dev/null || echo '@import "colors.css";' >> "$file"
 
-
-
 gsettings set org.gnome.desktop.interface gtk-theme 'Darkly'
 
 current=$(gsettings get org.gnome.desktop.interface color-scheme)
