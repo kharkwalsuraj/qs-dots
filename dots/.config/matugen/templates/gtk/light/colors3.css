@@ -1,0 +1,121 @@
+ /* ====================== Darkly-GTK ← Matugen Mapping ====================== */
+
+/* Borders */
+@define-color borders_breeze                              {{colors.outline.light.hex}};
+@define-color unfocused_borders_breeze                    {{colors.outline_variant.light.hex}};
+@define-color insensitive_borders_breeze                  {{colors.outline_variant.light.hex}};
+@define-color unfocused_insensitive_borders_breeze        {{colors.outline_variant.light.hex}};
+
+/* Content / Base */
+@define-color content_view_bg_breeze                      {{colors.surface.light.hex}};
+@define-color theme_base_color_breeze                     {{colors.surface.light.hex}};
+@define-color theme_bg_color_breeze                       {{colors.background.light.hex}};
+
+/* Error */
+@define-color error_color_breeze                          {{colors.error.light.hex}};
+@define-color error_color_backdrop_breeze                 {{colors.error.light.hex}};
+@define-color error_color_insensitive_breeze              {{colors.error_container.light.hex}};
+@define-color error_color_insensitive_backdrop_breeze     {{colors.error_container.light.hex}};
+
+/* Success */
+@define-color success_color_breeze                        {{colors.success.light.hex}};
+@define-color success_color_backdrop_breeze               {{colors.success.light.hex}};
+@define-color success_color_insensitive_breeze            {{colors.success_container.light.hex}};
+@define-color success_color_insensitive_backdrop_breeze   {{colors.success_container.light.hex}};
+
+/* Warning */
+@define-color warning_color_breeze                        {{colors.warning.light.hex}};
+@define-color warning_color_backdrop_breeze               {{colors.warning.light.hex}};
+@define-color warning_color_insensitive_breeze             {{colors.warning_container.light.hex}};
+@define-color warning_color_insensitive_backdrop_breeze    {{colors.warning_container.light.hex}};
+
+/* Insensitive / Disabled */
+@define-color insensitive_base_color_breeze               {{colors.surface_variant.light.hex}};
+@define-color insensitive_bg_color_breeze                 {{colors.surface_variant.light.hex}};
+@define-color insensitive_base_fg_color_breeze            {{colors.on_surface_variant.light.hex}};
+@define-color insensitive_fg_color_breeze                 {{colors.on_surface_variant.light.hex}};
+@define-color insensitive_selected_bg_color_breeze        {{colors.surface_variant.light.hex}};
+@define-color insensitive_selected_fg_color_breeze        {{colors.on_surface_variant.light.hex}};
+@define-color insensitive_unfocused_bg_color_breeze       {{colors.surface_variant.light.hex}};
+@define-color insensitive_unfocused_fg_color_breeze       {{colors.on_surface_variant.light.hex}};
+@define-color insensitive_unfocused_selected_bg_color_breeze {{colors.surface_variant.light.hex}};
+@define-color insensitive_unfocused_selected_fg_color_breeze {{colors.on_surface_variant.light.hex}};
+
+/* Links */
+@define-color link_color_breeze                           {{colors.primary.light.hex}};
+@define-color link_visited_color_breeze                   {{colors.secondary.light.hex}};
+
+/* Buttons */
+@define-color theme_button_background_normal_breeze       {{colors.secondary_container.light.hex}};
+@define-color theme_button_background_backdrop_breeze     {{colors.surface_container_high.light.hex}};
+@define-color theme_button_background_insensitive_breeze  {{colors.surface_variant.light.hex}};
+@define-color theme_button_background_backdrop_insensitive_breeze {{colors.surface_variant.light.hex}};
+
+@define-color theme_button_foreground_normal_breeze       {{colors.on_secondary_container.light.hex}};
+@define-color theme_button_foreground_active_breeze       {{colors.on_primary.light.hex}};
+@define-color theme_button_foreground_backdrop_breeze     {{colors.on_surface_variant.light.hex}};
+@define-color theme_button_foreground_insensitive_breeze  {{colors.on_surface_variant.light.hex}};
+@define-color theme_button_foreground_active_insensitive_breeze {{colors.on_surface_variant.light.hex}};
+@define-color theme_button_foreground_backdrop_insensitive_breeze {{colors.on_surface_variant.light.hex}};
+@define-color theme_button_foreground_active_backdrop_breeze {{colors.on_surface_variant.light.hex}};
+@define-color theme_button_foreground_active_backdrop_insensitive_breeze {{colors.on_surface_variant.light.hex}};
+
+@define-color theme_button_decoration_focus_breeze        {{colors.primary.light.hex}};
+@define-color theme_button_decoration_focus_backdrop_breeze {{colors.primary.light.hex}};
+@define-color theme_button_decoration_focus_insensitive_breeze {{colors.outline.light.hex}};
+@define-color theme_button_decoration_focus_backdrop_insensitive_breeze {{colors.outline.light.hex}};
+
+@define-color theme_button_decoration_hover_breeze        {{colors.secondary.light.hex}};
+@define-color theme_button_decoration_hover_backdrop_breeze {{colors.secondary.light.hex}};
+@define-color theme_button_decoration_hover_insensitive_breeze {{colors.outline.light.hex}};
+@define-color theme_button_decoration_hover_backdrop_insensitive_breeze {{colors.outline.light.hex}};
+
+/* Text & Foreground */
+@define-color theme_fg_color_breeze                       {{colors.on_background.light.hex}};
+@define-color theme_text_color_breeze                     {{colors.on_surface.light.hex}};
+@define-color theme_unfocused_fg_color_breeze             {{colors.on_surface_variant.light.hex}};
+@define-color theme_unfocused_text_color_breeze           {{colors.on_surface_variant.light.hex}};
+@define-color theme_unfocused_view_text_color_breeze      {{colors.on_surface_variant.light.hex}};
+
+/* Header */
+@define-color theme_header_background_breeze              {{colors.surface_container.light.hex}};
+@define-color theme_header_background_backdrop_breeze     {{colors.surface_container_high.light.hex}};
+@define-color theme_header_background_light_breeze        {{colors.surface_container.light.hex}};
+@define-color theme_header_foreground_breeze              {{colors.on_surface.light.hex}};
+@define-color theme_header_foreground_backdrop_breeze     {{colors.on_surface_variant.light.hex}};
+@define-color theme_header_foreground_insensitive_breeze  {{colors.on_surface_variant.light.hex}};
+@define-color theme_header_foreground_insensitive_backdrop_breeze {{colors.on_surface_variant.light.hex}};
+
+/* Titlebar */
+@define-color theme_titlebar_background_breeze            {{colors.surface_container.light.hex}};
+@define-color theme_titlebar_background_backdrop_breeze   {{colors.surface_container_high.light.hex}};
+@define-color theme_titlebar_background_light_breeze      {{colors.surface_container.light.hex}};
+@define-color theme_titlebar_foreground_breeze            {{colors.on_surface.light.hex}};
+@define-color theme_titlebar_foreground_backdrop_breeze   {{colors.on_surface_variant.light.hex}};
+@define-color theme_titlebar_foreground_insensitive_breeze {{colors.on_surface_variant.light.hex}};
+@define-color theme_titlebar_foreground_insensitive_backdrop_breeze {{colors.on_surface_variant.light.hex}};
+
+/* Selection */
+@define-color theme_selected_bg_color_breeze              {{colors.primary.light.hex}};
+@define-color theme_selected_fg_color_breeze              {{colors.on_primary.light.hex}};
+@define-color theme_hovering_selected_bg_color_breeze     {{colors.primary.light.hex}};
+@define-color theme_unfocused_selected_bg_color_breeze    {{colors.secondary_container.light.hex}};
+@define-color theme_unfocused_selected_bg_color_alt_breeze {{colors.secondary_container.light.hex}};
+@define-color theme_unfocused_selected_fg_color_breeze    {{colors.on_secondary_container.light.hex}};
+
+/* Unfocused */
+@define-color theme_unfocused_base_color_breeze           {{colors.surface_container_high.light.hex}};
+@define-color theme_unfocused_bg_color_breeze             {{colors.surface_container.light.hex}};
+@define-color theme_unfocused_view_bg_color_breeze        {{colors.surface_container_low.light.hex}};
+
+/* View decorations */
+@define-color theme_view_active_decoration_color_breeze   {{colors.primary.light.hex}};
+@define-color theme_view_hover_decoration_color_breeze    {{colors.secondary.light.hex}};
+
+/* Tooltip */
+@define-color tooltip_background_breeze                   {{colors.surface_container_highest.light.hex}};
+@define-color tooltip_text_breeze                         {{colors.on_surface.light.hex}};
+@define-color tooltip_border_breeze                       {{colors.outline.light.hex}};
+
+/* Close button */
+@define-color close_button_bg_breeze                      {{colors.error.light.hex}};

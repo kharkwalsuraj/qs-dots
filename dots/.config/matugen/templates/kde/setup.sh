@@ -2,10 +2,10 @@ current=$(gsettings get org.gnome.desktop.interface color-scheme)
 
 if [[ "$current" == "'prefer-dark'" ]]; then
     plasma-apply-colorscheme MaterialDark
-    cp ~/.config/matugen/templates/kde/output/kdeglobals-dark ~/.config/kdeglobals
+    cp ~/.config/matugen/outputs/kde/kdeglobals-dark ~/.config/kdeglobals
 else
     plasma-apply-colorscheme MaterialLight
-    cp ~/.config/matugen/templates/kde/output/kdeglobals-light ~/.config/kdeglobals
+    cp ~/.config/matugen/outputs/kde/kdeglobals-light ~/.config/kdeglobals
 fi
 
 killall xdg-desktop-portal-kde 2>/dev/null

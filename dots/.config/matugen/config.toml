@@ -5,38 +5,59 @@ import_json_files = ["./extra_colors.json"]
 set = true
 command = "awww img --transition-type center {{ image }}"
 
-[templates.gtk3]
-input_path= '~/.config/matugen/templates/gtk/colors3.css'
-output_path= '~/.config/gtk-3.0/colors.css'
 
-[templates.gtk4]
-input_path= '~/.config/matugen/templates/gtk/colors4.css'
-output_path= '~/.config/gtk-4.0/colors.css'
-post_hook= '~/.config/matugen/templates/gtk/setup.sh'
+# dark themes
+
+[templates.gtk3_dark]
+input_path= '~/.config/matugen/templates/gtk/dark/colors3.css'
+output_path= '~/.config/matugen/outputs/gtk/dark/colors3.css'
+
+[templates.gtk4_dark]
+input_path= '~/.config/matugen/templates/gtk/dark/colors4.css'
+output_path= '~/.config/matugen/outputs/gtk/dark/colors4.css'
 
 [templates.kde_colors_dark]
-input_path= '~/.config/matugen/templates/kde/MaterialDark.colors'
+input_path= '~/.config/matugen/templates/kde/dark/MaterialDark.colors'
 output_path = '~/.local/share/color-schemes/MaterialDark.colors'
 
+[templates.kdeglobals_dark]
+input_path= '~/.config/matugen/templates/kde/dark/kdeglobals-dark'
+output_path = '~/.config/matugen/outputs/kde/kdeglobals-dark'
+
+[templates.kitty_dark]
+input_path = '~/.config/matugen/templates/kitty/colors.dark.conf'
+output_path = '~/.config/matugen/outputs/kitty/colors.dark.conf'
+
+[templates.hypr_dark]
+input_path = '~/.config/matugen/templates/hypr/colors.dark.lua'
+output_path = '~/.config/matugen/outputs/hypr/colors.dark.lua'
+
+#light theme configs
+
+[templates.gtk3_light]
+input_path= '~/.config/matugen/templates/gtk/light/colors3.css'
+output_path= '~/.config/matugen/outputs/gtk/light/colors3.css'
+
+[templates.gtk4_light]
+input_path= '~/.config/matugen/templates/gtk/light/colors4.css'
+output_path= '~/.config/matugen/outputs/gtk/light/colors4.css'
+post_hook= '~/.config/matugen/templates/gtk/setup.sh'
+
 [templates.kde_colors_light]
-input_path= '~/.config/matugen/templates/kde/MaterialLight.colors'
+input_path= '~/.config/matugen/templates/kde/light/MaterialLight.colors'
 output_path = '~/.local/share/color-schemes/MaterialLight.colors'
 
-[templates.kdeglobals_dark]
-input_path= '~/.config/matugen/templates/kde/kdeglobals-dark'
-output_path = '~/.config/matugen/templates/kde/output/kdeglobals-dark'
-
 [templates.kdeglobals_light]
-input_path= '~/.config/matugen/templates/kde/kdeglobals-light'
-output_path = '~/.config/matugen/templates/kde/output/kdeglobals-light'
+input_path= '~/.config/matugen/templates/kde/light/kdeglobals-light'
+output_path = '~/.config/matugen/outputs/kde/kdeglobals-light'
 post_hook= '~/.config/matugen/templates/kde/setup.sh &' 
 
-[templates.terminal]
-input_path = '~/.config/matugen/templates/kitty/colors.conf'
-output_path = '~/.config/kitty/colors.conf'
-post_hook = 'pkill -USR1 kitty'
+[templates.kitty_light]
+input_path = '~/.config/matugen/templates/kitty/colors.light.conf'
+output_path = '~/.config/matugen/outputs/kitty/colors.light.conf'
+post_hook = '~/.config/matugen/templates/kitty/setup.sh'
 
-[templates.hypr]
-input_path = '~/.config/matugen/templates/hypr/colors.lua'
-output_path = '~/.config/hypr/config/colors.lua'
-post_hook = 'hyprctl reload'
+[templates.hypr_light]
+input_path = '~/.config/matugen/templates/hypr/colors.light.lua'
+output_path = '~/.config/matugen/outputs/hypr/colors.light.lua'
+post_hook = '~/.config/matugen/templates/hypr/setup.sh'
