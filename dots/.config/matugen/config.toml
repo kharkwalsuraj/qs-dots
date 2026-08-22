@@ -13,7 +13,7 @@ output_path= '~/.config/gtk-3.0/colors.css'
 [templates.gtk4]
 input_path= '~/.config/matugen/templates/gtk/colors4.css'
 output_path= '~/.config/gtk-4.0/colors.css'
-post_hook= '~/.config/matugen/templates/gtk/setup.sh'
+post_hook= '~/.config/matugen/templates/gtk/setup.sh {{ mode }}'
 
 [templates.kitty]
 input_path = '~/.config/matugen/templates/kitty/colors.conf'
@@ -28,7 +28,7 @@ output_path = '~/.config/hypr/config/colors.lua'
 input_path= '~/.config/matugen/templates/kde/dark/MaterialDark.colors'
 output_path = '~/.local/share/color-schemes/MaterialDark.colors'
 
-[templates.qt_color_sheme_light]
+[templates.qt_color_scheme_light]
 input_path= '~/.config/matugen/templates/kde/light/MaterialLight.colors'
 output_path = '~/.local/share/color-schemes/MaterialLight.colors'
 
@@ -39,4 +39,4 @@ output_path = '~/.config/matugen/outputs/kde/kdeglobals-light'
 [templates.kdeglobals_dark]
 input_path= '~/.config/matugen/templates/kde/dark/kdeglobals-dark'
 output_path = '~/.config/matugen/outputs/kde/kdeglobals-dark'
-post_hook = '~/.config/matugen/templates/kde/setup.sh'
+post_hook = '~/.config/matugen/templates/kde/setup.sh {{ mode }}'

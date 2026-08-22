@@ -1,10 +1,7 @@
 #!/usr/bin/env bash
+mode="${1,,}"   # force lowercase
 
-# echo "Seting up qt colors"
-
-current=$(gsettings get org.gnome.desktop.interface color-scheme)
-
-if [[ "$current" == "'prefer-dark'" ]]; then
+if [[ "$mode" == "dark" ]]; then
   cp ~/.config/matugen/outputs/kde/kdeglobals-dark ~/.config/kdeglobals
   plasma-apply-colorscheme MaterialDark
 else
@@ -12,6 +9,6 @@ else
   plasma-apply-colorscheme MaterialLight
 fi
 
-# TODO : file picker dosent change the theme so i have to restart, I need a better solution
+# Restart portal so file picker etc. pick up the new scheme
 killall xdg-desktop-portal-kde 2>/dev/null
-systemctl --user restart plasma-xdg-desktop-portal-kde.service
+systemctl --user restart plasma-xdg-desktop-portal-kde.service 2>/dev/null || true
