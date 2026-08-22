@@ -1,7 +1,7 @@
 --@type ChadrcConfig
 local M = {}
 M.base46 = {
-  theme = "nord",
+  theme = "wallsync",
   transparency = true,
   hl_override = {
     -- TbFill = { bg = "base00", },

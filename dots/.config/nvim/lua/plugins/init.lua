@@ -12,6 +12,12 @@ return {
       require "configs.lspconfig"
     end,
   },
+  {
+    "NvChad/WallSync",
+    lazy = false,
+    main = "wallsync",
+    opts = {},
+  },
 
   -- test new blink
   -- { import = "nvchad.blink.lazyspec" },

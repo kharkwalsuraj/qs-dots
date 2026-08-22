@@ -40,3 +40,43 @@ output_path = '~/.config/matugen/outputs/kde/kdeglobals-light'
 input_path= '~/.config/matugen/templates/kde/dark/kdeglobals-dark'
 output_path = '~/.config/matugen/outputs/kde/kdeglobals-dark'
 post_hook = '~/.config/matugen/templates/kde/setup.sh {{ mode }}'
+
+[templates.nvim]
+input_path = '~/.local/share/wallsync/matugen.lua'
+output_path = '~/.cache/wal/base46-dark.lua'
+
+[templates.nvimlight]
+input_path = '~/.local/share/wallsync/matugen.lua'
+output_path = '~/.cache/wal/base46-light.lua'
+
+[templates.pywal]
+input_path = '~/.local/share/wallsync/waltemplate'
+output_path = '~/.cache/wal/colors'
+
+[config.custom_colors.red]
+color = "#FF0000"
+blend = true
+
+[config.custom_colors.green]
+color = "#00FF00"
+blend = true
+
+[config.custom_colors.yellow]
+color = "#FFFF00"
+blend = true
+
+[config.custom_colors.blue]
+color = "#0000FF"
+blend = true
+
+[config.custom_colors.magenta]
+color = "#FF00FF"
+blend = true
+
+[config.custom_colors.cyan]
+color = "#00FFFF"
+blend = true
+
+[config.custom_colors.white]
+color = "#FFFFFF"
+blend = true
