@@ -15,9 +15,11 @@ gsettings set org.gnome.desktop.interface gtk-theme 'Darkly'
 
 current=$(gsettings get org.gnome.desktop.interface color-scheme)
 if [[ "$current" == "'prefer-dark'" ]]; then
-    gsettings set org.gnome.desktop.interface color-scheme prefer-light
-    gsettings set org.gnome.desktop.interface color-scheme prefer-dark
+  gsettings set org.gnome.desktop.interface icon-theme "breeze-dark"
+  gsettings set org.gnome.desktop.interface color-scheme prefer-light
+  gsettings set org.gnome.desktop.interface color-scheme prefer-dark
 else
-    gsettings set org.gnome.desktop.interface color-scheme prefer-dark
-    gsettings set org.gnome.desktop.interface color-scheme prefer-light
+  gsettings set org.gnome.desktop.interface icon-theme "breeze"
+  gsettings set org.gnome.desktop.interface color-scheme prefer-dark
+  gsettings set org.gnome.desktop.interface color-scheme prefer-light
 fi
