@@ -26,8 +26,8 @@
 /* Warning */
 @define-color warning_color_breeze                        #ffb787;
 @define-color warning_color_backdrop_breeze               #ffb787;
-@define-color warning_color_insensitive_breeze            #6b3d00;
-@define-color warning_color_insensitive_backdrop_breeze   #6b3d00;
+@define-color warning_color_insensitive_breeze             #6b3d00;
+@define-color warning_color_insensitive_backdrop_breeze    #6b3d00;
 
 /* Insensitive / Disabled */
 @define-color insensitive_base_color_breeze               #4a4645;
